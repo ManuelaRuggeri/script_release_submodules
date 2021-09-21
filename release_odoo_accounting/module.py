@@ -14,6 +14,7 @@ else:
 with open(path_file_xml, 'r') as myfile:
     data = xmltodict.parse(myfile.read())
 
+os.system('cd')
 
 for repo in data['repositories']:
     os.system('cd {}'.format(data['repositories'][repo]['name']))
@@ -44,6 +45,7 @@ for repo in data['repositories']:
         os.system('cd ..')
         os.system('git add odoo-accounting-addons')
         submodules_updated.append('odoo-accounting-addons')
-    os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
-    os.system('git push')
+    if len(submodules_updated) > 0:
+        os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
+        os.system('git push')
     os.system('cd')
