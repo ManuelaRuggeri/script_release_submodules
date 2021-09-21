@@ -11,6 +11,7 @@ _logger = logging.getLogger(__name__)
 if len(sys.argv) > 1 and sys.argv[1]:
     if len(sys.argv) != 3:
         print('Inserire questi parametri: True percorso_delle_cartelle_dei_progetti')
+        return False
     path_file_xml = 'settings.xml'
     folder_projects = sys.argv[2]
 else:
