@@ -17,6 +17,8 @@ if len(sys.argv) > 1 and sys.argv[1]:
     path_file_xml = 'settings.xml'
     if not stop_run:
         folder_projects = sys.argv[2]
+    else:
+        folder_projects = ''
 else:
     path_file_xml = os.path.join(tempfile.gettempdir(), 'settings.xml')
     folder_projects = ''
@@ -27,11 +29,11 @@ if not stop_run:
     with open(path_file_xml, 'r') as myfile:
         data = xmltodict.parse(myfile.read())
     print(os.getcwd())
-    os.system('cd {}'.format(folder_projects))
+    os.chdir('cd {}'.format(folder_projects))
     print(os.getcwd())
     
     for repo in data['repositories']:
-        os.system('cd {}'.format(data['repositories'][repo]['name']))
+        os.chdir('cd {}'.format(data['repositories'][repo]['name']))
         print(os.getcwd())
         os.system('git checkout {}'.format(data['repositories'][repo]['branch_update']))
         print(os.getcwd())
@@ -43,38 +45,38 @@ if not stop_run:
            
         if data['repositories'][repo]['submodules']['odoo-accounting']:
             print(os.getcwd())
-            os.system('cd odoo-accounting')
+            os.chdir('cd odoo-accounting')
             print(os.getcwd())
             os.system('git fetch')
             print(os.getcwd())
             os.system('git merge origin/{}'.format(data['repositories'][repo]['version']))
             print(os.getcwd())
-            os.system('cd ..')
+            os.chdir('cd ..')
             print(os.getcwd())
             os.system('git add odoo-accounting')
             print(os.getcwd())
             submodules_updated.append('odoo-accounting')
             print(os.getcwd())
         if data['repositories'][repo]['submodules']['odoo-accounting-enterprise']:
-            os.system('cd odoo-accounting-enterprise')
+            os.chdir('cd odoo-accounting-enterprise')
             print(os.getcwd())
             os.system('git fetch')
             print(os.getcwd())
             os.system('git merge origin/{}'.format(data['repositories'][repo]['version']))
             print(os.getcwd())
-            os.system('cd ..')
+            os.chdir('cd ..')
             print(os.getcwd())
             os.system('git add odoo-accounting-enterprise')
             print(os.getcwd())
             submodules_updated.append('odoo-accounting-enterprise')
         if data['repositories'][repo]['submodules']['odoo-accounting-addons']:
-            os.system('cd odoo-accounting-addons')
+            os.chdir('cd odoo-accounting-addons')
             print(os.getcwd())
             os.system('git fetch')
             print(os.getcwd())
             os.system('git merge origin/{}'.format(data['repositories'][repo]['version']))
             print(os.getcwd())
-            os.system('cd ..')
+            os.chdir('cd ..')
             print(os.getcwd())
             os.system('git add odoo-accounting-addons')
             print(os.getcwd())
@@ -85,5 +87,5 @@ if not stop_run:
             print(os.getcwd())
             os.system('git push')
             print(os.getcwd())
-        os.system('cd')
+        os.chdir('cd')
         print(os.getcwd())
