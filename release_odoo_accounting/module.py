@@ -59,7 +59,8 @@ for repo in data['repositories']:
     os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
     os.system('git push')
     
+    print('START PR: {}'.format('git request-pull origin/{} feature/{}'.format(data['repositories'][repo]['branch_update_target'],data['repositories'][repo]['branch_update'])))
     os.system('git request-pull origin/{} feature/{}'.format(data['repositories'][repo]['branch_update_target'],data['repositories'][repo]['branch_update']))
-    
+    print('END PR')
     os.chdir('..')
     print(os.getcwd())
