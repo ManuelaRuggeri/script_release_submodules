@@ -335,7 +335,7 @@
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
-		<version>14.0</version>
+		<version>13.0</version>
 		<pr>False</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_collaudo>
@@ -348,7 +348,7 @@
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
-		<version>14.0</version>
+		<version>13.0</version>
 		<pr>False</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_master>
