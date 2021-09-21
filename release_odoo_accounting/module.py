@@ -9,16 +9,20 @@ import logging
 _logger = logging.getLogger(__name__)
 
 if len(sys.argv) > 1 and sys.argv[1]:
+    if len(sys.argv) != 3:
+        print('Inserire questi parametri: True percorso_delle_cartelle_dei_progetti')
     path_file_xml = 'settings.xml'
+    folder_projects = sys.argv[2]
 else:
     path_file_xml = os.path.join(tempfile.gettempdir(), 'settings.xml')
+    folder_projects = ''
 
 print('path_file_xml: {}'.format(path_file_xml))
 
 with open(path_file_xml, 'r') as myfile:
     data = xmltodict.parse(myfile.read())
 print(os.getcwd())
-os.system('cd')
+os.system('cd {}'.format(folder_projects))
 print(os.getcwd())
 
 for repo in data['repositories']:
