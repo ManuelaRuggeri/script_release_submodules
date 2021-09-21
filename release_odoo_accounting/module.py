@@ -17,9 +17,9 @@ print('path_file_xml: {}'.format(path_file_xml))
 
 with open(path_file_xml, 'r') as myfile:
     data = xmltodict.parse(myfile.read())
-
+os.getcwd()
 os.system('cd')
-
+os.getcwd()
 for repo in data['repositories']:
     os.system('cd {}'.format(data['repositories'][repo]['name']))
     os.system('git checkout {}'.format(data['repositories'][repo]['branch_update']))
