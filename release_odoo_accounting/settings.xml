@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<repositories>
+	<odoo14_plenzich_collaudo>
+		<name>odoo14_plenzich</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>True</validation_pr>
+	</odoo14_plenzich_collaudo>
+	<odoo14_plenzich_master>
+		<name>odoo14_plenzich</name>
+		<branch_update>update_odoo_accounting_master</branch_update>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_plenzich_master>
+</repositories>
