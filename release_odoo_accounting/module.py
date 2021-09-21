@@ -69,3 +69,4 @@ for repo in data['repositories']:
     
     os.chdir('..')
     print(os.getcwd())
+    print('########################################################################')
