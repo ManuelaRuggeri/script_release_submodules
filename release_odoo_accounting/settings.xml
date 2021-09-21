@@ -3,6 +3,7 @@
 <repositories>
 	
 	<odoo14_opto-e_collaudo>
+		<active>False</active>
 		<name>odoo14_opto-e</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -16,6 +17,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_opto-e_collaudo>
 	<odoo14_opto-e_master>
+		<active>False</active>
 		<name>odoo14_opto-e</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -30,6 +32,7 @@
 	</odoo14_opto-e_master>
 	
 	<odoo14_panchic_collaudo>
+		<active>False</active>
 		<name>odoo14_panchic</name>
 		<branch_update>update-odoo-accounting-collaudo-wms</branch_update>
 		<branch_update_target>collaudo-wms</branch_update_target>
@@ -43,6 +46,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_panchic_collaudo>
 	<odoo14_panchic_master>
+		<active>False</active>
 		<name>odoo14_panchic</name>
 		<branch_update>update-odoo-accounting-master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -57,6 +61,7 @@
 	</odoo14_panchic_master>
 	
 	<odoo14_plenzich_collaudo>
+		<active>False</active>
 		<name>odoo14_plenzich</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -70,6 +75,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_plenzich_collaudo>
 	<odoo14_plenzich_master>
+		<active>False</active>
 		<name>odoo14_plenzich</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -84,6 +90,7 @@
 	</odoo14_plenzich_master>
 	
 	<odoo14_sendix_collaudo>
+		<active>False</active>
 		<name>odoo14_sendix</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -97,6 +104,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_sendix_collaudo>
 	<odoo14_sendix_master>
+		<active>False</active>
 		<name>odoo14_sendix</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -111,6 +119,7 @@
 	</odoo14_sendix_master>
 	
 	<odoo14_simulware_collaudo>
+		<active>False</active>
 		<name>odoo14_simulware</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -124,6 +133,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_simulware_collaudo>
 	<odoo14_simulware_main>
+		<active>False</active>
 		<name>odoo14_simulware</name>
 		<branch_update>update_odoo_accounting_main</branch_update>
 		<branch_update_target>main</branch_update_target>
@@ -138,6 +148,7 @@
 	</odoo14_simulware_main>
 	
 	<odoo14_symphonie_collaudo>
+		<active>False</active>
 		<name>odoo14_symphonie</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -151,6 +162,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_symphonie_collaudo>
 	<odoo14_symphonie_master>
+		<active>False</active>
 		<name>odoo14_symphonie</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -165,6 +177,7 @@
 	</odoo14_symphonie_master>
 	
 	<odoo14_cgr_collaudo>
+		<active>False</active>
 		<name>odoo14_cgr</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -178,6 +191,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_cgr_collaudo>
 	<odoo14_cgr_master>
+		<active>False</active>
 		<name>odoo14_cgr</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -192,6 +206,7 @@
 	</odoo14_cgr_master>
 	
 	<odoo14_epiroc_collaudo>
+		<active>False</active>
 		<name>odoo14_epiroc</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -205,6 +220,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_epiroc_collaudo>
 	<odoo14_epiroc_master>
+		<active>False</active>
 		<name>odoo14_epiroc</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -219,6 +235,7 @@
 	</odoo14_epiroc_master>
 	
 	<odoo13_bit2win_collaudo>
+		<active>False</active>
 		<name>odoo13_bit2win</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -232,6 +249,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_bit2win_collaudo>
 	<odoo13_bit2win_master>
+		<active>False</active>
 		<name>odoo13_bit2win</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -246,6 +264,7 @@
 	</odoo13_bit2win_master>
 	
 	<odoo13_mast_collaudo>
+		<active>False</active>
 		<name>odoo13_mast</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -259,6 +278,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_mast_collaudo>
 	<odoo13_mast_master>
+		<active>False</active>
 		<name>odoo13_mast</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -273,6 +293,7 @@
 	</odoo13_mast_master>
 	
 	<odoo13_pccube_collaudo>
+		<active>False</active>
 		<name>odoo13_pccube</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -286,6 +307,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_pccube_collaudo>
 	<odoo13_pccube_master>
+		<active>False</active>
 		<name>odoo13_pccube</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -300,6 +322,7 @@
 	</odoo13_pccube_master>
 	
 	<odoo13_saydigital_collaudo>
+		<active>False</active>
 		<name>odoo13_saydigital</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -313,6 +336,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_saydigital_collaudo>
 	<odoo13_saydigital_master>
+		<active>False</active>
 		<name>odoo13_saydigital</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -327,6 +351,7 @@
 	</odoo13_saydigital_master>
 	
 	<odoo13_rossatogroup_collaudo>
+		<active>True</active>
 		<name>odoo13_rossatogroup</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -340,6 +365,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_collaudo>
 	<odoo13_rossatogroup_master>
+		<active>True</active>
 		<name>odoo13_rossatogroup</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
