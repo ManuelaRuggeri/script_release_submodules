@@ -13,7 +13,7 @@ if len(sys.argv) > 1 and sys.argv[1]:
 else:
     path_file_xml = os.path.join(tempfile.gettempdir(), 'settings.xml')
 
-_logger.info('path_file_xml: {}'.format(path_file_xml))
+print('path_file_xml: {}'.format(path_file_xml))
 
 with open(path_file_xml, 'r') as myfile:
     data = xmltodict.parse(myfile.read())
