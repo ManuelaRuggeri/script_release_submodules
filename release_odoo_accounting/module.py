@@ -15,7 +15,8 @@ if len(sys.argv) > 1 and sys.argv[1]:
         print('Inserire questi parametri: True percorso_delle_cartelle_dei_progetti')
         stop_run = True
     path_file_xml = 'settings.xml'
-    folder_projects = sys.argv[2]
+    if not stop_run:
+        folder_projects = sys.argv[2]
 else:
     path_file_xml = os.path.join(tempfile.gettempdir(), 'settings.xml')
     folder_projects = ''
