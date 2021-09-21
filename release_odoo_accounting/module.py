@@ -4,7 +4,6 @@ import sys
 import os
 import xmltodict
 import tempfile
-import untangle
 
 if len(sys.argv) > 1 and sys.argv[1]:
     path_file_xml = 'settings.xml'
