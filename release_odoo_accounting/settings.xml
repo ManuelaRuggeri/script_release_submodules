@@ -4,6 +4,7 @@
 	<odoo14_plenzich_collaudo>
 		<name>odoo14_plenzich</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -16,6 +17,7 @@
 	<odoo14_plenzich_master>
 		<name>odoo14_plenzich</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
+		<branch_update_target>master</branch_update_target>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
