@@ -31,7 +31,9 @@ if not stop_run:
     print(os.getcwd())
     
     for repo in data['repositories']:
-        os.system('cd {}'.format(data['repositories'][repo]['name']))
+        cmd = 'cd {}'.format(data['repositories'][repo]['name'])
+        print(cmd)
+        os.system(cmd)
         os.system('git checkout {}'.format(data['repositories'][repo]['branch_update']))
         os.system('git pull')
         os.system('git submodule update')
