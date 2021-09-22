@@ -76,8 +76,8 @@ for repo in data['repositories']:
             pr = remote_repo.create_pull(
                 title="PR odoo-accounting",
                 body="PR odoo-accounting",
-                head=data['repositories'][repo]['branch_update_target'],
-                base=data['repositories'][repo]['branch_update'],
+                head=data['repositories'][repo]['branch_update'],
+                base=data['repositories'][repo]['branch_update_target'],
             )
             print('END PR')
             
