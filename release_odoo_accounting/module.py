@@ -73,6 +73,8 @@ for repo in data['repositories']:
             repo = gh.get_repo(name_repo)
             print('Repo: {}'.format(repo))
             print('Creation PR')
+            print('branch_update_target: {}'.format(data['repositories'][repo]['branch_update_target']))
+            print('branch_update: {}'.format(data['repositories'][repo]['branch_update']))
             pr = repo.create_pull(
                 title="PR odoo-accounting",
                 body="PR odoo-accounting",
