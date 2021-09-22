@@ -67,7 +67,10 @@ for repo in data['repositories']:
         if data['repositories'][repo]['pr'] == "True" and token != False:
             print('START PR')
             gh = Github(token)
-            repo = gh.get_repo(" saydigital/{}".format(data['repositories'][repo]['name']))
+            print('Token: {}'.format(token))
+            name_repo = "saydigital/{}".format(data['repositories'][repo]['name'])
+            print('Name repo: {}'.format(name_repo))
+            repo = gh.get_repo(name_repo)
             print('Repo: {}'.format(repo))
             print('Creation PR')
             pr = repo.create_pull(
