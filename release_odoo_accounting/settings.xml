@@ -13,7 +13,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_opto-e_collaudo>
 	<odoo14_opto-e_master>
@@ -27,7 +27,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_opto-e_master>
 	
@@ -42,7 +42,7 @@
 			<odoo-accounting-addons>True</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_panchic_collaudo>
 	<odoo14_panchic_master>
@@ -56,12 +56,12 @@
 			<odoo-accounting-addons>True</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_panchic_master>
 	
 	<odoo14_plenzich_collaudo>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo14_plenzich</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -85,7 +85,7 @@
 			<odoo-accounting-addons>True</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_plenzich_master>
 	
@@ -100,7 +100,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_sendix_collaudo>
 	<odoo14_sendix_master>
@@ -114,7 +114,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_sendix_master>
 	
@@ -129,7 +129,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_simulware_collaudo>
 	<odoo14_simulware_main>
@@ -143,7 +143,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_simulware_main>
 	
@@ -158,7 +158,7 @@
 			<odoo-accounting-addons>True</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_symphonie_collaudo>
 	<odoo14_symphonie_master>
@@ -172,7 +172,7 @@
 			<odoo-accounting-addons>True</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_symphonie_master>
 	
@@ -187,7 +187,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_cgr_collaudo>
 	<odoo14_cgr_master>
@@ -201,7 +201,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_cgr_master>
 	
@@ -216,7 +216,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_epiroc_collaudo>
 	<odoo14_epiroc_master>
@@ -230,7 +230,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_epiroc_master>
 	
@@ -245,7 +245,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_bit2win_collaudo>
 	<odoo13_bit2win_master>
@@ -259,7 +259,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_bit2win_master>
 	
@@ -274,7 +274,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_mast_collaudo>
 	<odoo13_mast_master>
@@ -288,7 +288,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_mast_master>
 	
@@ -303,7 +303,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_pccube_collaudo>
 	<odoo13_pccube_master>
@@ -317,7 +317,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_pccube_master>
 	
@@ -332,7 +332,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_saydigital_collaudo>
 	<odoo13_saydigital_master>
@@ -346,7 +346,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_saydigital_master>
 	
@@ -361,7 +361,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_collaudo>
 	<odoo13_rossatogroup_master>
@@ -375,7 +375,7 @@
 			<odoo-accounting-addons>False</odoo-accounting-addons>
 		</submodules>
 		<version>13.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_master>
 </repositories>
