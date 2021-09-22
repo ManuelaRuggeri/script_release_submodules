@@ -5,6 +5,7 @@ import os
 import xmltodict
 import tempfile
 import logging
+from github import Github
 
 _logger = logging.getLogger(__name__)
 
