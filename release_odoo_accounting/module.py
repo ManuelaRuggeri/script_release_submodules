@@ -70,15 +70,10 @@ for repo in data['repositories']:
             print('Token: {}'.format(token))
             name_repo = "saydigital/{}".format(data['repositories'][repo]['name'])
             print('Name repo: {}'.format(name_repo))
-            repo = gh.get_repo(name_repo)
-            print('Repo: {}'.format(repo))
+            remote_repo = gh.get_repo(name_repo)
+            print('Repo: {}'.format(remote_repo))
             print('Creation PR')
-            print('branch_update_target: {}'.format(data))
-            print('branch_update_target: {}'.format(data['repositories']))
-            print('branch_update_target: {}'.format(data['repositories'][repo]))
-            print('branch_update_target: {}'.format(data['repositories'][repo]['branch_update_target']))
-            print('branch_update: {}'.format(data['repositories'][repo]['branch_update']))
-            pr = repo.create_pull(
+            pr = remote_repo.create_pull(
                 title="PR odoo-accounting",
                 body="PR odoo-accounting",
                 head=data['repositories'][repo]['branch_update_target'],
