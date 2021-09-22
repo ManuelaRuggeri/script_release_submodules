@@ -8,10 +8,12 @@ import logging
 
 _logger = logging.getLogger(__name__)
 
-if len(sys.argv) > 1 and sys.argv[1]:
+if len(sys.argv) > 1 and sys.argv[1] and sys.argv[2]:
     path_file_xml = 'settings.xml'
+    token = sys.argv[2]
 else:
     path_file_xml = os.path.join(tempfile.gettempdir(), 'settings.xml')
+    token = False
 
 print('path_file_xml: {}'.format(path_file_xml))
 
@@ -61,9 +63,9 @@ for repo in data['repositories']:
         os.system('git push')
         
         pr = False
-        if data['repositories'][repo]['pr'] == "True":
+        if data['repositories'][repo]['pr'] == "True" and token != False:
             print('START PR')
-            repo = g.get_repo(" saydigital/{}".format(data['repositories'][repo]['name']))
+            repo = Github(token).get_repo(" saydigital/{}".format(data['repositories'][repo]['name']))
             print('Repo: {}'.format(repo))
             print('Creation PR')
             pr = repo.create_pull(
