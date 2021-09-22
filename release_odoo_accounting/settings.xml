@@ -71,7 +71,7 @@
 			<odoo-accounting-addons>True</odoo-accounting-addons>
 		</submodules>
 		<version>14.0</version>
-		<pr>False</pr>
+		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_plenzich_collaudo>
 	<odoo14_plenzich_master>
