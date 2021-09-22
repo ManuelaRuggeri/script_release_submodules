@@ -60,12 +60,21 @@ for repo in data['repositories']:
         os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
         os.system('git push')
         
+        pr = False
         if data['repositories'][repo]['pr'] == "True":
-            print('START PR: {}'.format('git request-pull origin/{} origin/{}'.format(data['repositories'][repo]['branch_update_target'],data['repositories'][repo]['branch_update'])))
-            os.system('git request-pull origin/{} origin/{}'.format(data['repositories'][repo]['branch_update_target'],data['repositories'][repo]['branch_update']))
+            print('START PR')
+            repo = g.get_repo(" saydigital/{}".format(data['repositories'][repo]['name']))
+            print('Repo: {}'.format(repo))
+            print('Creation PR')
+            pr = repo.create_pull(
+                title="PR odoo-accounting",
+                body="PR odoo-accounting",
+                head=data['repositories'][repo]['branch_update_target'],
+                base=data['repositories'][repo]['branch_update'],
+            )
             print('END PR')
-        
-        if data['repositories'][repo]['validation_pr'] == "True":
+            
+        if data['repositories'][repo]['validation_pr'] == "True" and pr != False:
             print('Validation PR')
         
         os.chdir('..')
