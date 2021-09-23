@@ -112,3 +112,27 @@ def main():
 # così puoi anche chamarlo da altri progs
 if __name__ == '__main__':
     main()
+
+#######
+    # # setup logging
+    # if not os.path.isdir(log_dir_name):
+    #     os.mkdir(log_dir_name)
+    # logfile = "listAWSresources_{:%Y%m%d}.log".format(date.today())
+    # logfile = os.path.join(log_dir_name, logfile)
+    # logger = logging.getLogger('global log')
+    # logger.setLevel(logging.DEBUG)
+
+    # log_handler = FileHandler(logfile)
+    # log_handler = TimedRotatingFileHandler(logfile, when='W6')
+    # # create formatter and add it to the handlers
+    # log_formatter = logging.Formatter(
+    #     '%(asctime)s - %(levelname)s - %(message)s'
+    # )
+    # log_handler.setFormatter(log_formatter)
+    # log_handler.setLevel(logging.DEBUG)
+
+    # logger.addHandler(log_handler)
+
+# Use
+#        logger.info(
+#            "Writing file {} for {}".format(filename, client)
