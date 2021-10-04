@@ -177,7 +177,7 @@
 	</odoo14_symphonie_master>
 	
 	<odoo14_cgr_collaudo>
-		<active>False</active>
+		<active>True</active>
 		<name>odoo14_cgr</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -191,7 +191,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo14_cgr_collaudo>
 	<odoo14_cgr_master>
-		<active>False</active>
+		<active>True</active>
 		<name>odoo14_cgr</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>master</branch_update_target>
