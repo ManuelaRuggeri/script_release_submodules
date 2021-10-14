@@ -1,7 +1,7 @@
 #!/bin/env python3
 
-# TODO: add file path as param
-# TODO: approve PR using pygithub
+# TODO: Add file path as param
+# TODO: Approve PR using pygithub
 
 import argparse
 import logging
@@ -93,7 +93,7 @@ def main():
                     print('Repo: {}'.format(remote_repo))
                     print('Creation PR')
                     pr = remote_repo.create_pull(
-                        title="PR odoo-accounting",
+                        title="PR odoo-accounting {}".format(data['repositories'][repo]['branch_update_target']),
                         body="PR odoo-accounting",
                         head=data['repositories'][repo]['branch_update'],
                         base=data['repositories'][repo]['branch_update_target'],
