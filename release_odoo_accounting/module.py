@@ -1,7 +1,7 @@
 #!/bin/env python3
 
-# TODO: Add file path as param
 # TODO: Approve PR using pygithub
+# TODO: Aggiungere i file di log
 
 import argparse
 import logging
@@ -14,7 +14,7 @@ from github import Github
 
 description = 'Update submodules for odoo-accounting'
 version = '%(prog)s 1.0'
-usage = '%(prog)s -t githubToken'
+usage = '%(prog)s -t githubToken [-f path_file_xml]'
 
 _logger = logging.getLogger(__name__)
 
@@ -27,13 +27,17 @@ def options():
         '-t', '--token-gh', dest='token', required=True,
         action='store', nargs='?', help='GitHub token used to create pull request'
     )
+    parser.add_argument(
+        '-f', '--file-path', dest='path_file_xml', required=False,
+        action='store', nargs='?', help="Path of settings.xml file, if you don't pass it default is 'settings.xml'" 
+    )
     args = parser.parse_args()
     return args
 
 def main():
     args = options()
 
-    path_file_xml = 'settings.xml'
+    path_file_xml = 'settings.xml' if not bool(args.path_file_xml) else args.path_file_xml
     token = args.token
 
     with open(path_file_xml, 'r') as myfile:
@@ -41,42 +45,24 @@ def main():
 
     for repo in data['repositories']:
         if data['repositories'][repo]['active'] == "True":
+            print("----->{}<-----".format(data['repositories'][repo]['name']))
             os.chdir('{}'.format(data['repositories'][repo]['name']))
             print(os.getcwd())
             os.system('git checkout {}'.format(data['repositories'][repo]['branch_update']))
             os.system('git pull')
             os.system('git submodule update')
-            submodules_updated = []
                
-            if data['repositories'][repo]['submodules']['odoo-accounting'] == "True":
-                os.chdir('odoo-accounting')
-                print(os.getcwd())
-                os.system('git fetch')
-                os.system('git merge origin/{}'.format(data['repositories'][repo]['version']))
-                os.chdir('..')
-                print(os.getcwd())
-                os.system('git add odoo-accounting')
-                submodules_updated.append('odoo-accounting')
-            
-            if data['repositories'][repo]['submodules']['odoo-accounting-enterprise'] == "True":
-                os.chdir('odoo-accounting-enterprise')
-                print(os.getcwd())
-                os.system('git fetch')
-                os.system('git merge origin/{}'.format(data['repositories'][repo]['version']))
-                os.chdir('..')
-                print(os.getcwd())
-                os.system('git add odoo-accounting-enterprise')
-                submodules_updated.append('odoo-accounting-enterprise')
-            
-            if data['repositories'][repo]['submodules']['odoo-accounting-addons'] == "True":
-                os.chdir('odoo-accounting-addons')
-                print(os.getcwd())
-                os.system('git fetch')
-                os.system('git merge origin/{}'.format(data['repositories'][repo]['version']))
-                os.chdir('..')
-                print(os.getcwd())
-                os.system('git add odoo-accounting-addons')
-                submodules_updated.append('odoo-accounting-addons')
+            submodules_updated = []
+            for submodule in data['repositories'][repo]['submodules']:
+                if data['repositories'][repo]['submodules'][submodule] == "True":
+                    os.chdir(submodule)
+                    print(os.getcwd())
+                    os.system('git fetch')
+                    os.system('git merge origin/{}'.format(data['repositories'][repo]['branch_update_target']))
+                    os.chdir('..')
+                    print(os.getcwd())
+                    os.system('git add {}'.format(submodule))
+                    submodules_updated.append(submodule)
             
             os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
             os.system('git push')
