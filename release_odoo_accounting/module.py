@@ -14,7 +14,7 @@ from github import Github
 
 description = 'Update submodules for odoo-accounting'
 version = '%(prog)s 1.0'
-usage = '%(prog)s -t githubToken [-f path_file_xml] [-ld log_dir_name]'
+usage = '%(prog)s -t githubToken [-f path_file_xml] [-l log_dir_name]'
 
 def options():
     parser = argparse.ArgumentParser(
@@ -29,6 +29,10 @@ def options():
         '-f', '--file-path', dest='path_file_xml', required=False,
         action='store', nargs='?', help="Path of settings.xml file, if you don't pass it default is 'settings.xml'" 
     )
+    parser.add_argument(
+        '-l', '--log-dir-path', dest='log_dir_name', required=False,
+        action='store', nargs='?', help="Path of dir log , if you don't pass it default is 'dir_log'" 
+    )
     args = parser.parse_args()
     return args
 
@@ -36,10 +40,10 @@ def create_log_and_print(logger, msg):
     print(msg)
     logger.info(msg)
 
-def setting_log(log_dir_name):
+def setup_log(log_dir_name):
     if not os.path.isdir(log_dir_name):
         os.mkdir(log_dir_name)
-    logfile = "{}_{:%Y%m%d}.log".format('Pippo',date.today())
+    logfile = "{}_{:%Y%m%d}.log".format('release_odoo_accounting',date.today())
     logfile = os.path.join(log_dir_name, logfile)
     logger = logging.getLogger('global log')
     logger.setLevel(logging.DEBUG)
@@ -61,7 +65,7 @@ def main():
     path_file_xml = 'settings.xml' if not bool(args.path_file_xml) else args.path_file_xml
     token = args.token
     
-    logger = setting_log(log_dir_name)
+    logger = setup_log(log_dir_name)
     
     with open(path_file_xml, 'r') as myfile:
         data = xmltodict.parse(myfile.read())
