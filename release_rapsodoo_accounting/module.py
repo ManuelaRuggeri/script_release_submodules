@@ -58,7 +58,7 @@ def setup_log(log_dir_name):
     log_handler.setFormatter(log_formatter)
     log_handler.setLevel(logging.DEBUG)
     logger.addHandler(log_handler)
-    return logger
+    return logger, logfile
     
 def main():
     args = options()
@@ -67,7 +67,7 @@ def main():
     path_file_xml = 'settings.xml' if not bool(args.path_file_xml) else args.path_file_xml
     token = args.token
     
-    logger = setup_log(log_dir_name)
+    logger, logfile = setup_log(log_dir_name)
     
     with open(path_file_xml, 'r') as myfile:
         data = xmltodict.parse(myfile.read())
@@ -77,24 +77,24 @@ def main():
             create_log_and_print(logger, "----->{}<-----".format(data['repositories'][repo]['name']))
             os.chdir('{}/{}'.format(data['repositories'][repo]['organizzazione'], data['repositories'][repo]['name']))
             create_log_and_print(logger, os.getcwd())
-            os.system('git pull')
-            os.system('git checkout {}'.format(data['repositories'][repo]['branch_update_target']))
-            os.system('git submodule update')
+            os.system('git pull | tee -a {}'.format(logfile))
+            os.system('git checkout {} | tee -a {}'.format(data['repositories'][repo]['branch_update_target'], logfile))
+            os.system('git submodule update | tee -a {}'.format(logfile))
             
             submodules_updated = []
             for submodule in data['repositories'][repo]['submodules']:
                 if data['repositories'][repo]['submodules'][submodule] == "True":
                     os.chdir(submodule)
                     create_log_and_print(logger, os.getcwd())
-                    os.system('git fetch')
-                    os.system('git merge origin/{}'.format(data['repositories'][repo]['branch_update_target']))
+                    os.system('git fetch | tee -a {}'.format(logfile))
+                    os.system('git merge origin/{} | tee -a {}'.format(data['repositories'][repo]['branch_update_target'], logfile))
                     os.chdir('..')
                     create_log_and_print(logger, os.getcwd())
-                    os.system('git add {}'.format(submodule))
+                    os.system('git add {} | tee -a {}'.format(submodule, logfile))
                     submodules_updated.append(submodule)
             
-            os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
-            os.system('git push')
+            os.system('git commit -m "[{}][SUB]Updated" | tee -a {}'.format(','.join(name for name in submodules_updated)), logfile)
+            os.system('git push | tee -a {}'.format(logfile))
             
             os.chdir('../..')
             create_log_and_print(logger, os.getcwd())
