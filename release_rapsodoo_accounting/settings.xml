@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<repositories>
+	<odoo13_rapsodoo-accounting>
+		<active>True</active>
+		<organizzazione>TonyMasciI</organizzazione>
+		<name>rapsodoo-accounting</name>
+		<branch_update_target>13_dev</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>13.0</version>
+	</odoo13_rapsodoo-accounting>
+	<odoo14_rapsodoo-accounting>
+		<active>True</active>
+		<organizzazione>saydigital</organizzazione>
+		<name>rapsodoo-accounting</name>
+		<branch_update_target>14_dev</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+	</odoo14_rapsodoo-accounting>
+	<odoo15_rapsodoo-accounting>
+		<active>False</active>
+		<organizzazione>saydigital</organizzazione>
+		<name> rapsodoo-accounting-15</name>
+		<branch_update_target>15_dev</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>15.0</version>
+	</odoo15_rapsodoo-accounting>
+</repositories>

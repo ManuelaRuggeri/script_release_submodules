@@ -5,14 +5,16 @@
 
 import argparse
 import logging
+import logging.handlers
 import os
 import sys
 import tempfile
 import xmltodict
+from datetime import date
 
 from github import Github
 
-description = 'Update submodules for odoo-accounting'
+description = 'Update submodules for rapsodoo-accounting'
 version = '%(prog)s 1.0'
 usage = '%(prog)s -t githubToken [-f path_file_xml] [-l log_dir_name]'
 
@@ -43,7 +45,7 @@ def create_log_and_print(logger, msg):
 def setup_log(log_dir_name):
     if not os.path.isdir(log_dir_name):
         os.mkdir(log_dir_name)
-    logfile = "{}_{:%Y%m%d}.log".format('release_odoo_accounting',date.today())
+    logfile = "{}_{:%Y%m%d}.log".format('release_rapsodoo_accounting',date.today())
     logfile = os.path.join(log_dir_name, logfile)
     logger = logging.getLogger('global log')
     logger.setLevel(logging.DEBUG)
@@ -57,7 +59,7 @@ def setup_log(log_dir_name):
     log_handler.setLevel(logging.DEBUG)
     logger.addHandler(log_handler)
     return logger
-
+    
 def main():
     args = options()
     
@@ -73,12 +75,12 @@ def main():
     for repo in data['repositories']:
         if data['repositories'][repo]['active'] == "True":
             create_log_and_print(logger, "----->{}<-----".format(data['repositories'][repo]['name']))
-            os.chdir('{}'.format(data['repositories'][repo]['name']))
+            os.chdir('{}/{}'.format(data['repositories'][repo]['organizzazione'], data['repositories'][repo]['name']))
             create_log_and_print(logger, os.getcwd())
-            os.system('git checkout {}'.format(data['repositories'][repo]['branch_update']))
             os.system('git pull')
+            os.system('git checkout {}'.format(data['repositories'][repo]['branch_update_target']))
             os.system('git submodule update')
-               
+            
             submodules_updated = []
             for submodule in data['repositories'][repo]['submodules']:
                 if data['repositories'][repo]['submodules'][submodule] == "True":
@@ -94,34 +96,9 @@ def main():
             os.system('git commit -m "[{}][SUB]Updated"'.format(','.join(name for name in submodules_updated)))
             os.system('git push')
             
-            pr = False
-            if data['repositories'][repo]['pr'] == "True" and token != False:
-                try:
-                    create_log_and_print(logger, 'START PR')
-                    gh = Github(token)
-                    create_log_and_print(logger, 'Token: {}'.format(token))
-                    name_repo = "saydigital/{}".format(data['repositories'][repo]['name'])
-                    create_log_and_print(logger, 'Name repo: {}'.format(name_repo))
-                    remote_repo = gh.get_repo(name_repo)
-                    create_log_and_print(logger, 'Repo: {}'.format(remote_repo))
-                    create_log_and_print(logger, 'Creation PR')
-                    pr = remote_repo.create_pull(
-                        title="PR odoo-accounting {}".format(data['repositories'][repo]['branch_update_target']),
-                        body="PR odoo-accounting",
-                        head=data['repositories'][repo]['branch_update'],
-                        base=data['repositories'][repo]['branch_update_target'],
-                    )
-                    create_log_and_print(logger, 'END PR')
-                except Exception as error:
-                    create_log_and_print(logger, "ERROR CREATION PR: {}".format(error))
-                
-            if data['repositories'][repo]['validation_pr'] == "True" and pr != False:
-                create_log_and_print(logger, 'Validation PR')
-            
-            os.chdir('..')
+            os.chdir('../..')
             create_log_and_print(logger, os.getcwd())
             create_log_and_print(logger, '########################################################################')
-
-# così puoi anche chamarlo da altri progs
+# cosi puoi anche chamarlo da altri progs
 if __name__ == '__main__':
     main()
