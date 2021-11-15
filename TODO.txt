@@ -1,0 +1,2 @@
+1 - Aggiungere nel metodo create_log_and_print i vari tipi di errore [info,warning,error]
+2 - Approve PR using pygithub
