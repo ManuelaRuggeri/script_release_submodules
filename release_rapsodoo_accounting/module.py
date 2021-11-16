@@ -1,8 +1,5 @@
 #!/bin/env python3
 
-# TODO: Approve PR using pygithub
-# TODO: Aggiungere nel metodo create_log_and_print i vari tipi di errore [info,warning,error]
-
 import argparse
 import logging
 import logging.handlers
