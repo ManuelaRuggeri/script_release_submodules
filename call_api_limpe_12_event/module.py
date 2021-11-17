@@ -11,11 +11,6 @@ uid = common.authenticate(db, username, password, {})
 
 models = xmlrpc.client.ServerProxy('{}/xmlrpc/2/object'.format(url))
 
-res = models.execute_kw(db, uid, password,
-            'res.users', 'search',
-            [[['id', '=', 2]]],
-            {})
-
-result = models.execute_kw(db, uid, password, 'event.event', 'get_sub_event_api', [], {})
+result = models.execute_kw(db, uid, password, 'syd_api_event.connector', 'test_connection', [], {})
 
 print(result)
