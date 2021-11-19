@@ -90,7 +90,7 @@ def main():
                     os.system('git add {} | tee -a {}'.format(submodule, logfile))
                     submodules_updated.append(submodule)
             
-            os.system('git commit -m "[{}][SUB]Updated" | tee -a {}'.format(','.join(name for name in submodules_updated)), logfile)
+            os.system('git commit -m "[{}][SUB]Updated" | tee -a {}'.format(','.join(name for name in submodules_updated), logfile))
             os.system('git push | tee -a {}'.format(logfile))
             
             os.chdir('../..')
