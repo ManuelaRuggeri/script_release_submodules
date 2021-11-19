@@ -55,7 +55,7 @@ def setup_log(log_dir_name):
     log_handler.setFormatter(log_formatter)
     log_handler.setLevel(logging.DEBUG)
     logger.addHandler(log_handler)
-    return logger
+    return logger, logfile
 
 def main():
     args = options()
@@ -64,7 +64,7 @@ def main():
     path_file_xml = 'settings.xml' if not bool(args.path_file_xml) else args.path_file_xml
     token = args.token
     
-    logger = setup_log(log_dir_name)
+    logger, logfile = setup_log(log_dir_name)
     
     with open(path_file_xml, 'r') as myfile:
         data = xmltodict.parse(myfile.read())
