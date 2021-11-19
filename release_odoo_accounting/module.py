@@ -6,6 +6,7 @@ import os
 import sys
 import tempfile
 import xmltodict
+from datetime import date
 
 from github import Github
 
