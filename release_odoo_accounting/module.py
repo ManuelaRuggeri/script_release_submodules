@@ -77,7 +77,7 @@ def main():
             print(repo)
             print(data['repositories'][repo])
             print(data['repositories'][repo]['branch_update'])
-            os.system('git checkout {} | tee -a {}'.format(data['repositories'][repo]['branch_update']), logfile)
+            os.system('git checkout {} | tee -a {}'.format(data['repositories'][repo]['branch_update'], logfile))
             os.system('git pull | tee -a {}'.format(logfile))
             os.system('git submodule update | tee -a {}'.format(logfile))
                
@@ -87,7 +87,7 @@ def main():
                     os.chdir(submodule)
                     create_log_and_print(logger, os.getcwd())
                     os.system('git fetch | tee -a {}'.format(logfile))
-                    os.system('git merge origin/{} | tee -a {}'.format(data['repositories'][repo]['branch_update_target']), logfile)
+                    os.system('git merge origin/{} | tee -a {}'.format(data['repositories'][repo]['branch_update_target'], logfile))
                     os.chdir('..')
                     create_log_and_print(logger, os.getcwd())
                     os.system('git add {} | tee -a {}'.format(submodule, logfile))
