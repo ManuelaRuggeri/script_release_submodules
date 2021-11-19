@@ -3,8 +3,8 @@ import xmlrpc.client
 
 url = "http://localhost:8085"
 db = "odoo12_Limpe_Master_2021-09-22"
-username = 'a'
-password = 'a'
+username = 'user_connector_event@example.com'
+password = 'test'
 
 common = xmlrpc.client.ServerProxy('{}/xmlrpc/2/common'.format(url))
 uid = common.authenticate(db, username, password, {})
