@@ -79,9 +79,14 @@ def main():
             os.system('git submodule update | tee -a {}'.format(logfile))
                
             submodules_updated = []
+            
+            folder = ''
+            if data['repositories'][repo]['folder'] != "False":
+                folder = data['repositories'][repo]['folder']
+            
             for submodule in data['repositories'][repo]['submodules']:
                 if data['repositories'][repo]['submodules'][submodule] == "True":
-                    os.chdir(submodule)
+                    os.chdir('{}{}'.format('{}_'.format(folder) if folder else folder, submodule))
                     create_log_and_print(logger, os.getcwd())
                     os.system('git fetch | tee -a {}'.format(logfile))
                     os.system('git merge origin/{} | tee -a {}'.format(data['repositories'][repo]['branch_update_target'], logfile))

@@ -7,6 +7,7 @@
 		<name>odoo13_bit2win</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -21,6 +22,7 @@
 		<name>odoo13_bit2win</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -36,6 +38,7 @@
 		<name>odoo13_mast</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -50,6 +53,7 @@
 		<name>odoo13_mast</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -65,6 +69,7 @@
 		<name>odoo13_pccube</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -79,6 +84,7 @@
 		<name>odoo13_pccube</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -94,6 +100,7 @@
 		<name>odoo13_saydigital</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -108,6 +115,7 @@
 		<name>odoo13_saydigital</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -123,6 +131,7 @@
 		<name>odoo13_rossatogroup</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -137,6 +146,7 @@
 		<name>odoo13_rossatogroup</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -152,6 +162,7 @@
 		<name>odoo14_opto-e</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -166,6 +177,7 @@
 		<name>odoo14_opto-e</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -181,6 +193,7 @@
 		<name>odoo14_panchic</name>
 		<branch_update>update-odoo-accounting-collaudo-wms</branch_update>
 		<branch_update_target>collaudo-wms</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -195,6 +208,7 @@
 		<name>odoo14_panchic</name>
 		<branch_update>update-odoo-accounting-master</branch_update>
 		<branch_update_target>master</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -210,6 +224,7 @@
 		<name>odoo14_plenzich</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -225,6 +240,7 @@
 		<name>odoo14_sendix</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -240,6 +256,7 @@
 		<name>odoo14_simulware</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -254,6 +271,7 @@
 		<name>odoo14_simulware</name>
 		<branch_update>update_odoo_accounting_main</branch_update>
 		<branch_update_target>main</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -269,6 +287,7 @@
 		<name>odoo14_symphonie</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -284,6 +303,7 @@
 		<name>odoo14_epiroc</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -299,6 +319,7 @@
 		<name>odoo14_cgr</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
@@ -314,6 +335,7 @@
 		<name>topcs</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>14.0-test</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -329,6 +351,7 @@
 		<name>a2green</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>14.0-test</branch_update_target>
+		<folder>False</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -344,6 +367,7 @@
 		<name>terragelato</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>staging</branch_update_target>
+		<folder>rapsodoo</folder>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
