@@ -2,240 +2,8 @@
 
 <repositories>
 	
-	<odoo14_opto-e_collaudo>
-		<active>True</active>
-		<name>odoo14_opto-e</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_opto-e_collaudo>
-	<odoo14_opto-e_master>
-		<active>True</active>
-		<name>odoo14_opto-e</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_opto-e_master>
-	
-	<odoo14_panchic_collaudo>
-		<active>True</active>
-		<name>odoo14_panchic</name>
-		<branch_update>update-odoo-accounting-collaudo-wms</branch_update>
-		<branch_update_target>collaudo-wms</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>True</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_panchic_collaudo>
-	<odoo14_panchic_master>
-		<active>True</active>
-		<name>odoo14_panchic</name>
-		<branch_update>update-odoo-accounting-master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>True</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_panchic_master>
-	
-	<odoo14_plenzich_collaudo>
-		<active>True</active>
-		<name>odoo14_plenzich</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>True</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_plenzich_collaudo>
-	<odoo14_plenzich_master>
-		<active>True</active>
-		<name>odoo14_plenzich</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>True</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_plenzich_master>
-	
-	<odoo14_sendix_collaudo>
-		<active>True</active>
-		<name>odoo14_sendix</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_sendix_collaudo>
-	<odoo14_sendix_master>
-		<active>True</active>
-		<name>odoo14_sendix</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_sendix_master>
-	
-	<odoo14_simulware_collaudo>
-		<active>True</active>
-		<name>odoo14_simulware</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_simulware_collaudo>
-	<odoo14_simulware_main>
-		<active>True</active>
-		<name>odoo14_simulware</name>
-		<branch_update>update_odoo_accounting_main</branch_update>
-		<branch_update_target>main</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_simulware_main>
-	
-	<odoo14_symphonie_collaudo>
-		<active>True</active>
-		<name>odoo14_symphonie</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>True</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_symphonie_collaudo>
-	<odoo14_symphonie_master>
-		<active>True</active>
-		<name>odoo14_symphonie</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>True</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_symphonie_master>
-	
-	<odoo14_cgr_collaudo>
-		<active>True</active>
-		<name>odoo14_cgr</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_cgr_collaudo>
-	<odoo14_cgr_master>
-		<active>True</active>
-		<name>odoo14_cgr</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_cgr_master>
-	
-	<odoo14_epiroc_collaudo>
-		<active>True</active>
-		<name>odoo14_epiroc</name>
-		<branch_update>update_odoo_accounting_collaudo</branch_update>
-		<branch_update_target>collaudo</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_epiroc_collaudo>
-	<odoo14_epiroc_master>
-		<active>True</active>
-		<name>odoo14_epiroc</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>master</branch_update_target>
-		<submodules>
-			<odoo-accounting>True</odoo-accounting>
-			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
-			<odoo-accounting-addons>False</odoo-accounting-addons>
-		</submodules>
-		<version>14.0</version>
-		<pr>True</pr>
-		<validation_pr>False</validation_pr>
-	</odoo14_epiroc_master>
-	
 	<odoo13_bit2win_collaudo>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_bit2win</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -249,7 +17,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_bit2win_collaudo>
 	<odoo13_bit2win_master>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_bit2win</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -264,7 +32,7 @@
 	</odoo13_bit2win_master>
 	
 	<odoo13_mast_collaudo>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_mast</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -278,7 +46,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_mast_collaudo>
 	<odoo13_mast_master>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_mast</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -293,7 +61,7 @@
 	</odoo13_mast_master>
 	
 	<odoo13_pccube_collaudo>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_pccube</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -307,7 +75,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_pccube_collaudo>
 	<odoo13_pccube_master>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_pccube</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -336,7 +104,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_saydigital_collaudo>
 	<odoo13_saydigital_master>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_saydigital</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -351,7 +119,7 @@
 	</odoo13_saydigital_master>
 	
 	<odoo13_rossatogroup_collaudo>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_rossatogroup</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>collaudo</branch_update_target>
@@ -365,7 +133,7 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_collaudo>
 	<odoo13_rossatogroup_master>
-		<active>True</active>
+		<active>False</active>
 		<name>odoo13_rossatogroup</name>
 		<branch_update>update_odoo_accounting_master</branch_update>
 		<branch_update_target>master</branch_update_target>
@@ -379,8 +147,170 @@
 		<validation_pr>False</validation_pr>
 	</odoo13_rossatogroup_master>
 	
+	<odoo14_opto-e_collaudo>
+		<active>False</active>
+		<name>odoo14_opto-e</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_opto-e_collaudo>
+	<odoo14_opto-e_master>
+		<active>False</active>
+		<name>odoo14_opto-e</name>
+		<branch_update>update_odoo_accounting_master</branch_update>
+		<branch_update_target>master</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_opto-e_master>
+	
+	<odoo14_panchic_collaudo>
+		<active>False</active>
+		<name>odoo14_panchic</name>
+		<branch_update>update-odoo-accounting-collaudo-wms</branch_update>
+		<branch_update_target>collaudo-wms</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_panchic_collaudo>
+	<odoo14_panchic_master>
+		<active>False</active>
+		<name>odoo14_panchic</name>
+		<branch_update>update-odoo-accounting-master</branch_update>
+		<branch_update_target>master</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_panchic_master>
+	
+	<odoo14_plenzich_collaudo>
+		<active>False</active>
+		<name>odoo14_plenzich</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_plenzich_collaudo>
+	
+	<odoo14_sendix_collaudo>
+		<active>False</active>
+		<name>odoo14_sendix</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_sendix_collaudo>
+	
+	<odoo14_simulware_collaudo>
+		<active>False</active>
+		<name>odoo14_simulware</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_simulware_collaudo>
+	<odoo14_simulware_main>
+		<active>False</active>
+		<name>odoo14_simulware</name>
+		<branch_update>update_odoo_accounting_main</branch_update>
+		<branch_update_target>main</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_simulware_main>
+	
+	<odoo14_symphonie_collaudo>
+		<active>False</active>
+		<name>odoo14_symphonie</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>True</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_symphonie_collaudo>
+	
+	<odoo14_epiroc_collaudo>
+		<active>False</active>
+		<name>odoo14_epiroc</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_epiroc_collaudo>
+	
+	<odoo14_cgr_collaudo>
+		<active>False</active>
+		<name>odoo14_cgr</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>collaudo</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>14.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_cgr_collaudo>
+	
 	<odoo14_topcs_collaudo>
-		<active>True</active>
+		<active>False</active>
 		<name>topcs</name>
 		<branch_update>update_odoo_accounting_collaudo</branch_update>
 		<branch_update_target>14.0-test</branch_update_target>
@@ -393,11 +323,12 @@
 		<pr>True</pr>
 		<validation_pr>False</validation_pr>
 	</odoo14_topcs_collaudo>
-	<odoo14_topcs_master>
-		<active>True</active>
-		<name>topcs</name>
-		<branch_update>update_odoo_accounting_master</branch_update>
-		<branch_update_target>14.0</branch_update_target>
+	
+	<odoo14_a2green_collaudo>
+		<active>False</active>
+		<name>a2green</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>14.0-test</branch_update_target>
 		<submodules>
 			<odoo-accounting>True</odoo-accounting>
 			<odoo-accounting-enterprise>True</odoo-accounting-enterprise>
@@ -406,5 +337,21 @@
 		<version>14.0</version>
 		<pr>True</pr>
 		<validation_pr>False</validation_pr>
-	</odoo14_topcs_master>
+	</odoo14_a2green_collaudo>
+	
+	<odoo14_terragelato_collaudo>
+		<active>False</active>
+		<name>terragelato</name>
+		<branch_update>update_odoo_accounting_collaudo</branch_update>
+		<branch_update_target>staging</branch_update_target>
+		<submodules>
+			<odoo-accounting>True</odoo-accounting>
+			<odoo-accounting-enterprise>False</odoo-accounting-enterprise>
+			<odoo-accounting-addons>False</odoo-accounting-addons>
+		</submodules>
+		<version>15.0</version>
+		<pr>True</pr>
+		<validation_pr>False</validation_pr>
+	</odoo14_terragelato_collaudo>
+	
 </repositories>
