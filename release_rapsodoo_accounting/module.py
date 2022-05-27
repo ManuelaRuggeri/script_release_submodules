@@ -74,8 +74,8 @@ def main():
             create_log_and_print(logger, "----->{}<-----".format(data['repositories'][repo]['name']))
             os.chdir('{}/{}'.format(data['repositories'][repo]['organizzazione'], data['repositories'][repo]['name']))
             create_log_and_print(logger, os.getcwd())
-            os.system('git pull | tee -a {}'.format(logfile))
             os.system('git checkout {} | tee -a {}'.format(data['repositories'][repo]['branch_update_target'], logfile))
+            os.system('git pull | tee -a {}'.format(logfile))
             os.system('git submodule update | tee -a {}'.format(logfile))
             
             submodules_updated = []
