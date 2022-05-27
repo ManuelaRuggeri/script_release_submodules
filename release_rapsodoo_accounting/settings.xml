@@ -2,7 +2,7 @@
 
 <repositories>
 	<odoo13_rapsodoo-accounting>
-		<active>True</active>
+		<active>False</active>
 		<organizzazione>TonyMasciI</organizzazione>
 		<name>rapsodoo-accounting</name>
 		<branch_update_target>13_dev</branch_update_target>
@@ -26,7 +26,7 @@
 		<version>14.0</version>
 	</odoo14_rapsodoo-accounting>
 	<odoo15_rapsodoo-accounting>
-		<active>True</active>
+		<active>False</active>
 		<organizzazione>saydigital</organizzazione>
 		<name> rapsodoo-accounting-15</name>
 		<branch_update_target>15_dev</branch_update_target>
